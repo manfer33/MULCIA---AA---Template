@@ -5,12 +5,13 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[all]{xy}
 
-\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{amsmath,amsthm,amssymb,color,latexsym,enumitem}
 \usepackage{geometry}        
 \geometry{letterpaper}  
 \usepackage{graphicx}
 \theoremstyle{definition}
 \newtheorem{problem}{Ejercicio}
+\newtheorem{question}{Cuestión}
 
 \newenvironment{solution}[1]{\vspace{\baselineskip}#1}{\vspace{\baselineskip}}
 
