@@ -21,10 +21,48 @@ Solución
 \end{solution}
 
 \begin{problem}
-Sea $D = \{\langle x_1, c(x_1)\rangle, . . . ,\langle x_n, c(x_n)\rangle\}$ un conjunto de entrenamiento para un concepto $C$ y sea $H$ un conjunto de hipótesis. Demostrar que el resultado de aplicar el algoritmo de ELIMINACIÓN DE CANDIDATOS es el mismo para cualquier ordenación de los elementos de $D$.
+Sea $D = \{\langle x_1, c(x_1)\rangle, . . . ,\langle x_n, c(x_n)\rangle\}$ un conjunto de entrenamiento para un concepto $\mathcal{C}$ y sea $\mathcal{H}$ un conjunto de hipótesis. Demostrar que el resultado de aplicar el algoritmo de ELIMINACIÓN DE CANDIDATOS es el mismo para cualquier ordenación de los elementos de $D$.
 \end{problem}
- \begin{solution}
+\begin{solution}
 Solución
 \end{solution}
+ 
+\begin{problem}
+Aplica los algoritmos de aprendizaje \emph{por enumeración} y  \emph{Find-S} para los siguientes problemas de aprendizaje:
+\end{problem}
+\vspace{-5pt}
+\begin{solution}
 
+\begin{itemize}
+    \item \textbf{Problema 1} \\
+    $X = \mathbb{R}^2$ \\
+    $H = \{h_n:X\to \{0,1\}|n\in\mathbb{N}\wedge h_n((x,y))=1\Leftrightarrow x^2+y^2 \le n^2 \}$ \\
+    $s = \{\langle (1, 1),1\rangle,\langle (3, 4),1\rangle,\langle (2, 2),1\rangle,\langle (4, 7),0\rangle\}$\\
+    
+    \item \textbf{Problema 2} \\
+    $X = \mathbb{R}^2$ \\
+    $H = \{h_n|n\in \mathbb{N}\}$ con $h_0=\emptyset$ y si $n >1$ entonces \\
+    \textcolor{white}{.}$\ \ \ \ \ \ \ h_n=\{(x,y)\in X|a,b\in\mathbb{N}, a\le x < b, n = \frac{b(b-1)}{2}+a+1\}$\\
+    $s = \{\langle (0, 0),0\rangle,\langle (3, 4),1\rangle,\langle (2, 2),1\rangle\}$\\
+\end{itemize}
+\end{solution}
+
+\begin{problem}
+En este ejercicio consideraremos $X = \{0, 1\}^n$, i.e., $X$ es el conjunto de todas las cadenas de longitud $n$ formadas por ceros y unos.
+\end{problem}
+\begin{solution}
+    \begin{enumerate}
+        \item ¿Cuantos ejemplos positivos del concepto palíndromo hay en $X$?\\
+        
+        Solución    
+        
+        \item Sea $\omega$ el concepto definido en $X$ de la siguiente manera: $\omega(y) = 1$ si y sólo si $y$ contiene como máximo dos 1’s. Prueba que el número de ejemplos positivos de $\omega$ es una función cuadrática de $n$.\\
+        
+        Solución    
+        
+        \item Supongamos que en un problemas de aprendizaje sobre $X$ aplicamos el algoritmo de aprendizaje por enumeración sobre el conjunto de todas las hipótesis y las hipótesis están enumeradas de manera que la que buscamos está en la primera mitad. Si podemos probar un millón de hipótesis por segundo y $X = \{0, 1\}^9$, ¿cuánto tiempo llevará encontrar la hipótesis buscada en el peor de los casos?\\
+        
+        Solución
+    \end{enumerate}
+\end{solution}
 \end{document}

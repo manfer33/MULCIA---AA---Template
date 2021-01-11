@@ -3,10 +3,12 @@
 
 \LoadClass[12pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
 
-\usepackage{amsthm}
-\geometry{letterpaper}
-
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}  
+\usepackage{graphicx}
 \theoremstyle{definition}
 \newtheorem{problem}{Ejercicio}
 
@@ -48,6 +50,7 @@
     \noindent\hrulefill
     
     \endgroup
+
 }
 
 
