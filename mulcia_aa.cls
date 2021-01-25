@@ -5,13 +5,20 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[all]{xy}
 
-\usepackage{amsmath,amsthm,amssymb,color,latexsym,enumitem}
+\usepackage{amsmath,amsthm,amssymb,color,latexsym,enumitem,hyperref}
 \usepackage{geometry}        
 \geometry{letterpaper}  
 \usepackage{graphicx}
 \theoremstyle{definition}
 \newtheorem{problem}{Ejercicio}
 \newtheorem{question}{Cuestión}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
 
 \newenvironment{solution}[1]{\vspace{\baselineskip}#1}{\vspace{\baselineskip}}
 
@@ -43,16 +50,14 @@
     
     \noindent\hrulefill
     \vspace{1.5ex}
-    
-    Puedes usar el procesador de textos que prefieras. El fichero que entregues
-    debe estar en formato pdf. Queda terminantemente prohibido entregar soluciones
-    a mano.
-    
-    \noindent\hrulefill
-    
+
     \endgroup
 
 }
-
+\newcommand{\genAdvice}{
+    Puedes usar el procesador de textos que prefieras. El fichero que entregues debe estar en formato pdf. Queda terminantemente prohibido entregar soluciones a mano.
+    
+    \noindent\hrulefill
+}
 
 

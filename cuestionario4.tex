@@ -1,0 +1,33 @@
+\documentclass{mulcia_aa}
+
+\name{Nombre}
+\lastName{Apellidos}
+
+\begin{document}
+\genTitle
+
+En este cuestionario se espera que el alumno profundice en algunos aspectos de la implementación de los árboles de decisión que no se han visto en clase. Se espera que el alumno presente \textbf{el mejor análisis posible} dependiendo de su formación básica y de su experiencia con sistemas de aprendizaje automático.
+
+Para ello, cada alumno debe elegir una base de datos del repositorio de la Universidad de California (accesible en \hyperlink{https://archive.ics.uci.edu/ml/datasets.php}{https://archive.ics.uci.edu/ml/datasets.php}) y realizar sobre él el siguiente estudio.
+
+\begin{enumerate}
+    \item Reproducir los pasos que se han visto en clase sobre el conjunto iris, en particular:
+    
+    \begin{enumerate}[label=\emph{\alph*)}]
+        \item Carga del fichero en python y probablemente, eliminación de las filas que no tengan todos los datos. Esto último no se ha visto en clase. Se sugiere mirar la documentación de la librería \emph{pandas}.
+        
+        \item Realiza un pequeño examen exploratorio creando la \emph{scatter matrix} y el mapa de calor \emph{(}heatmap) de los coeficientes de correlación de Pearson entre las variables.
+        
+        \item Divide la base de datos en conjunto de entrenamiento y prueba y crea el correspondiente árbol de decisión sobre le conjunto de entrenamiento.
+        
+        \item Representa gráficamente el árbol obtenido.
+        
+        \item Encuentra la media de rendimiento \emph{(score)} del árbol sobre los conjuntos de entrenamiento, prueba y total.
+    \end{enumerate}
+        
+    \item La parte realmente interesante de este cuestionario empieza ahora, donde se espera que el alumno demuestre su \textbf{autonomía} y \textbf{capacidad de profundización} en la materia a partir de los conceptos básicos. Se espera que el alumno continúe con el análisis del conjunto de datos y presente el estudio \textbf{más completo posible}. ¿Qué otros métodos podríamos utilizar para obtener el mejor árbol de decisión posible?
+\end{enumerate}
+
+\textbf{Nota:} Los métodos \emph{ensemble} basados en árboles de decisión \emph{(Random forest, Gradient boosted, etc)} se estudiarán en la asignatura \emph{Inteligencia Artificial para la Ciencias de los Datos} del segundo cuatrimestre.
+
+\end{document}
